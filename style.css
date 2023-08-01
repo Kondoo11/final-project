@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav img:hover{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+nav ul li a{
+    color: black;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25Px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2 h1{
+font-size: 50px;
+line-height: 60px;
+margin:25px 0;
+}
+.header{
+    background:radial-gradient(white,rgb(57, 57, 57));
+}
+/* sildes */
+.slides{
+    margin: 70px 0;
+  
+}
+.slides h2{
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 15px;
+}
+.slide-container{
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+}
+.myslides{
+    display: none;
+}
+
+.captiontext{
+    color: black;
+    font-family: sans-serif;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext{
+    color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0
+}
+.dot{
+    cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover{
+    background-color: #717171;
+}
+/* ..................shop products............................ */
+.section-title{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+.shop-product{
+   padding: 45px;
+   padding-left: 120px;
+   background:radial-gradient(white,rgb(57, 57, 57)) ;
+}
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,auto));
+    gap: 1.5rem;
+}
+.col-4{
+   position: relative;
+}
+.col-4:hover{
+    padding: 15px;
+    border: 1px solid none;
+    transition: 0.4s;
+}
+.col-4 img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5em;
+}
+.product-name{
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+.price{
+    font-weight: 500px;
+}
+.fa-cart-arrow-down{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: var(--text-color);
+    padding: 10px;
+    cursor: pointer;
+}
+.fa-cart-arrow-down:hover{
+    background: grey;
+}
+/* panier */
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 365px;
+    min-height: 100vh;
+    background-color: gray;
+    box-shadow: -2px 0 4px #bbb7b7;
+    transform: 0.3s;
+    z-index: 300;
+}
+.cart.active{
+    right: 0;
+}
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2rem;
+
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+
+}
+.detail-box{
+    display:grid;
+    row-gap: 0.5rem;
+}
+.cart-product-title{
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.cart-price{
+    font-weight: 500;
+}
+.cart-quantity{
+    border: 1px solid var(--text-color);
+    outline-color: var(--main-color);
+    width: 2.4rem;
+    text-align: center;
+}
+.cart-remove{
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--text-color);
+}
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-price{
+    margin-left: 0.5em;
+    text-decoration: underline;
+}
+.btn-buy{
+    display: flex;
+    margin: 1.5em auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+.btn-buy:hover{
+    background-color: var(--text-color);
+}
+.btn-buy:active{
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    opacity: 0.50;
+}
+#close-cart{
+    position: absolute;
+    top:1rem ;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+/* .......................................... */
+footer p{
+    text-align: center;
+    font-weight: 200;
+    font-size: 15px;
+}
