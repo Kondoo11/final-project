@@ -272,3 +272,46 @@ footer p{
     font-weight: 200;
     font-size: 15px;
 }
+/* signup page */
+.container1{
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 100px;
+    padding-top: 15px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  button {
+    background-color: grey;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  .head{
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  .head h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+  }
+  .head h2{
+    font-weight: 500;
+  
+  }
+  .head1{
+    text-align: center;
+  }
